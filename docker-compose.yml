@@ -11,8 +11,7 @@ services:
       - mongo-data:/data/db
 
   backend:
-    build:
-      context: ./backend
+    image: YOUR_DOCKER_USERNAME/notes-backend:latest
 
     container_name: notes-backend
 
@@ -26,8 +25,7 @@ services:
       - mongodb
 
   frontend:
-    build:
-      context: ./frontend
+    image: YOUR_DOCKER_USERNAME/notes-frontend:latest
 
     container_name: notes-frontend
 

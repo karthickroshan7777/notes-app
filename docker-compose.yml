@@ -11,7 +11,7 @@ services:
       - mongo-data:/data/db
 
   backend:
-    image: YOUR_DOCKER_USERNAME/notes-backend:latest
+    image: karthickroshan77/notes-backend:latest
 
     container_name: notes-backend
 
@@ -25,7 +25,7 @@ services:
       - mongodb
 
   frontend:
-    image: YOUR_DOCKER_USERNAME/notes-frontend:latest
+    image: karthickroshan77/notes-frontend:latest
 
     container_name: notes-frontend
 

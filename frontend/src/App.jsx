@@ -10,7 +10,7 @@ function App() {
   // Fetch all notes
   const fetchNotes = async () => {
     try {
-      const response = await fetch("http://13.222.186.45:5000/notes");
+      const response = await fetch("http://54.83.181.153:5000/notes");
       const data = await response.json();
       setNotes(data);
     } catch (error) {
@@ -26,7 +26,7 @@ function App() {
   // Add a new note
   const addNote = async () => {
     try {
-      await fetch("http://13.222.186.45:5000/notes", {
+      await fetch("http://54.83.181.153:5000/notes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -49,7 +49,7 @@ function App() {
   // Delete a note
   const deleteNote = async (id) => {
     try {
-      await fetch(`http://13.222.186.45:5000/notes/${id}`, {
+      await fetch(`http://54.83.181.153:5000/notes/${id}`, {
         method: "DELETE",
       });
 
@@ -69,7 +69,7 @@ function App() {
   // Update a note
   const updateNote = async () => {
     try {
-      await fetch(`http://13.222.186.45:5000/notes/${editingId}`, {
+      await fetch(`http://54.83.181.153:5000/notes/${editingId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

@@ -92,7 +92,7 @@ function App() {
 
   return (
   <div className="container">
-    <h1>📝 Notes App valthukal valthukal</h1>
+    <h3>📝 Notes App valthukal valthukal</h3>
 
     <div className="form">
       <input
